@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ept07fux1f8a"]
+
+[ext_resource type="Script" uid="uid://dg1c47fn21ewg" path="res://Scripts/player.gd" id="1_y0qk3"]
+[ext_resource type="PackedScene" uid="uid://bk0xxprmfxtpn" path="res://Addons/MC/NexoITCH.fbx" id="2_3y5cq"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yp4wr"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a02cp"]
+radius = 0.4
+height = 1.8
+
+[node name="player" type="CharacterBody3D"]
+script = ExtResource("1_y0qk3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("CapsuleMesh_yp4wr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_a02cp")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6961268, -0.34239492)
+
+[node name="NexoITCH" parent="." instance=ExtResource("2_3y5cq")]
+transform = Transform3D(-0.175, 0, -1.5298985e-08, 0, 0.175, 0, 1.5298985e-08, 0, -0.175, -0.0008928776, -0.90531343, 0.036376864)

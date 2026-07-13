@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://upx1u8w8g2wh"]
+
+[ext_resource type="PackedScene" uid="uid://ept07fux1f8a" path="res://Objects/player.tscn" id="1_a02cp"]
+[ext_resource type="PackedScene" uid="uid://cbsc1ed7lvplt" path="res://Addons/BurgerPiz/Models/BurgerPiz.glb" id="2_go701"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a02cp"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_go701"]
+sky_material = SubResource("ProceduralSkyMaterial_a02cp")
+
+[sub_resource type="Environment" id="Environment_5a7ea"]
+background_mode = 2
+sky = SubResource("Sky_go701")
+tonemap_mode = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yp4wr"]
+size = Vector3(500, 1, 500)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yp4wr"]
+albedo_color = Color(0.032762274, 0.13700306, 0.041269384, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_a02cp"]
+size = Vector2(500, 500)
+orientation = 1
+
+[node name="world" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5a7ea")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.24999997, -0.3555041, 0.884848, 0.3010995, -0.35159189, 0.17188382, -0.9202386, 0, 11.427606, 45.772747)
+shadow_enabled = true
+
+[node name="floor" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_yp4wr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.098602295, -0.15289593, -0.0491724)
+material_override = SubResource("StandardMaterial3D_yp4wr")
+mesh = SubResource("QuadMesh_a02cp")
+
+[node name="player" parent="." instance=ExtResource("1_a02cp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.853912, 1.289093, 109.95462)
+
+[node name="Cafe" type="MeshInstance3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cafe"]
+
+[node name="ImporterMeshInstance3D" type="ImporterMeshInstance3D" parent="Cafe"]
+
+[node name="BurgerPiz2" parent="." instance=ExtResource("2_go701")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.073, 0.41072845, 16.612)
