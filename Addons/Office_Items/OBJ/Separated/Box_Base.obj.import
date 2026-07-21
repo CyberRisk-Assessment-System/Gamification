@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c2wm8lel4ymae"
+path="res://.godot/imported/Box_Base.obj-f1d1121329283e085626aa67f685279d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Box_Base.obj-f1d1121329283e085626aa67f685279d.mesh"]
+
+source_file="res://Addons/Office_Items/OBJ/Separated/Box_Base.obj"
+dest_files=["res://.godot/imported/Box_Base.obj-f1d1121329283e085626aa67f685279d.mesh", "res://.godot/imported/Box_Base.obj-f1d1121329283e085626aa67f685279d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

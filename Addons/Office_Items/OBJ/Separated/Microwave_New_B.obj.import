@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yrtmisycnbsv"
+path="res://.godot/imported/Microwave_New_B.obj-6e57217cf3f26df2d238be9c4410359e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Microwave_New_B.obj-6e57217cf3f26df2d238be9c4410359e.mesh"]
+
+source_file="res://Addons/Office_Items/OBJ/Separated/Microwave_New_B.obj"
+dest_files=["res://.godot/imported/Microwave_New_B.obj-6e57217cf3f26df2d238be9c4410359e.mesh", "res://.godot/imported/Microwave_New_B.obj-6e57217cf3f26df2d238be9c4410359e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

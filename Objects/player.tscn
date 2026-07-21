@@ -22,7 +22,7 @@ mesh = SubResource("CapsuleMesh_yp4wr")
 shape = SubResource("CapsuleShape3D_a02cp")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6961268, -0.34239492)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6961268, 0.019026667)
 
 [node name="NexoITCH" parent="." instance=ExtResource("2_3y5cq")]
 transform = Transform3D(-0.175, 0, -1.5298985e-08, 0, 0.175, 0, 1.5298985e-08, 0, -0.175, -0.0008928776, -0.90531343, 0.036376864)

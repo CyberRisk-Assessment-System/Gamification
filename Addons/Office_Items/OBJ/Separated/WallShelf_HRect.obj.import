@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ccnmttj7u1iwe"
+path="res://.godot/imported/WallShelf_HRect.obj-3f00e1fa5376cbb98c9f169b2e1a7006.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallShelf_HRect.obj-3f00e1fa5376cbb98c9f169b2e1a7006.mesh"]
+
+source_file="res://Addons/Office_Items/OBJ/Separated/WallShelf_HRect.obj"
+dest_files=["res://.godot/imported/WallShelf_HRect.obj-3f00e1fa5376cbb98c9f169b2e1a7006.mesh", "res://.godot/imported/WallShelf_HRect.obj-3f00e1fa5376cbb98c9f169b2e1a7006.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

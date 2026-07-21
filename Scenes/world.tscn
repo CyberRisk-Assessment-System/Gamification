@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://upx1u8w8g2wh"]
+[gd_scene load_steps=11 format=3 uid="uid://upx1u8w8g2wh"]
 
 [ext_resource type="PackedScene" uid="uid://ept07fux1f8a" path="res://Objects/player.tscn" id="1_a02cp"]
 [ext_resource type="PackedScene" uid="uid://cbsc1ed7lvplt" path="res://Addons/BurgerPiz/Models/BurgerPiz.glb" id="2_go701"]
+[ext_resource type="PackedScene" uid="uid://b78embx5rtplf" path="res://Addons/Building/building_05.dae" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://dadst257cu20" path="res://Addons/BurgerPiz/Models/Cafe.blend" id="3_8j60k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a02cp"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -46,7 +48,7 @@ material_override = SubResource("StandardMaterial3D_yp4wr")
 mesh = SubResource("QuadMesh_a02cp")
 
 [node name="player" parent="." instance=ExtResource("1_a02cp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.853912, 1.289093, 109.95462)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.2321, 1.289093, 70.953514)
 
 [node name="Cafe" type="MeshInstance3D" parent="."]
 
@@ -55,4 +57,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.853912, 1.289093, 109.954
 [node name="ImporterMeshInstance3D" type="ImporterMeshInstance3D" parent="Cafe"]
 
 [node name="BurgerPiz2" parent="." instance=ExtResource("2_go701")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.073, 0.41072845, 16.612)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.7642, 0.41072845, 16.612)
+
+[node name="Cafe" parent="BurgerPiz2" instance=ExtResource("3_8j60k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -389.22253, 0, 0)
+
+[node name="building_05" parent="." instance=ExtResource("3_5a7ea")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -155.88907, 0, 81.93265)

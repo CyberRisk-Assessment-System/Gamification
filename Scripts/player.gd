@@ -7,6 +7,8 @@ const JUMP_VELOCITY = 4.5
 var sensitivity = 0.003
 @onready var camera = $Camera3D
 
+var can_move = true
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -21,6 +23,9 @@ func _process(delta):
 		get_tree().quit()
 
 func _physics_process(delta: float) -> void:
+	
+	if !can_move:
+		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -41,3 +46,7 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.
