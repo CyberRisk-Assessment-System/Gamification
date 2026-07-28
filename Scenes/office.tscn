@@ -187,13 +187,13 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.4
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.746643, 0, -0.8660259)
 
 [node name="Wall_Standard9" parent="MultiMeshInstance3D" instance=ExtResource("13_vh33w")]
-transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 2.9978952, -1.0057688)
+transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 13.148652, -1.0057688)
 
 [node name="Wall_Standard10" parent="MultiMeshInstance3D" instance=ExtResource("13_vh33w")]
-transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 2.9978952, 0.9834051)
+transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 13.148652, 0.9834051)
 
 [node name="Wall_Standard11" parent="MultiMeshInstance3D" instance=ExtResource("13_vh33w")]
-transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 2.9978952, 2.9144201)
+transform = Transform3D(-4.371139e-08, 4.285, -4.371139e-08, 0, -1.8730329e-07, -1, -1, -1.8730329e-07, 1.9106855e-15, -7.90567, 13.148652, 2.9144201)
 
 [node name="Wall_Standard4" parent="MultiMeshInstance3D" instance=ExtResource("13_vh33w")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.746643, 0, 1.1306858)
@@ -378,9 +378,9 @@ script = ExtResource("33_hwh3d")
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer"]
 visible = false
-offset_top = 526.0
-offset_right = 1151.0
-offset_bottom = 648.0
+offset_top = 953.0
+offset_right = 1914.0
+offset_bottom = 1075.0
 script = SubResource("GDScript_igjay")
 
 [node name="Label" type="Label" parent="CanvasLayer/DialogueBox"]
@@ -420,9 +420,9 @@ text = "Browse Files"
 
 [node name="InteractLabel" type="Label" parent="CanvasLayer"]
 offset_left = -2.0
-offset_top = 540.0
+offset_top = 977.0
 offset_right = 1157.0
-offset_bottom = 642.0
+offset_bottom = 1079.0
 text = "Press \"E\" to interact"
 
 [node name="Lee" type="CharacterBody3D" parent="."]
@@ -478,7 +478,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5263672, 1.3848877, 0)
 shape = SubResource("BoxShape3D_xaajp")
 
 [node name="DeskTarget" type="Marker3D" parent="."]
-transform = Transform3D(-0.9303217, -0.00021122984, -0.36674476, 5.2400974e-12, 0.99999994, -0.0005759587, 0.3667448, -0.00053582684, -0.9303216, -3.0318315, 0, 2.9352732)
+transform = Transform3D(-0.9303217, -0.00021122984, -0.36674476, 5.2400974e-12, 0.99999994, -0.0005759587, 0.3667448, -0.00053582684, -0.9303216, -1.5478685, 0, 1.3753061)
 
 [connection signal="body_entered" from="Lee/Area3D" to="Lee/Area3D" method="_on_body_entered"]
 [connection signal="body_entered" from="LeeComputer/Area3D" to="LeeComputer/Area3D" method="_on_body_entered"]

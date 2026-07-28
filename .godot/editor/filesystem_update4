@@ -1,9 +1,2 @@
 res://Scenes/office.tscn
-res://Scripts/Lee.gd
 res://Scripts/player.gd
-res://Scripts/canvas_layer.gd
-res://Scripts/Dialogue_Manager.gd
-res://Scripts/lee_charbody3d.gd
-res://Scripts/Computer.gd
-res://Scripts/ChoiceMenu.gd
-res://Scripts/MissionManager.gd
