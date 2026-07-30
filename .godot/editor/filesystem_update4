@@ -1,2 +1,9 @@
 res://Scenes/office.tscn
+res://Scripts/lee_charbody3d.gd
+res://Scripts/Computer.gd
+res://Scripts/Dialogue_Manager.gd
+res://Scripts/ChoiceMenu.gd
+res://Scripts/aisha.gd
+res://Scripts/Aisha.gd
 res://Scripts/player.gd
+res://Scripts/MissionManager.gd
