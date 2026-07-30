@@ -57,6 +57,9 @@ func choice_pressed(choice):
 	# -----------------------
 	if current_mission == "lee":
 
+		var choices = {0: lock_button.text, 1: screen_button.text, 2: leave_button.text, 3: browse_button.text}
+		MissionManager.record_choice("Lee Mission", "What will you do with Lee's computer?", choices[choice])
+
 		var lee = get_tree().current_scene.get_node("Lee")
 
 		lee.start_walk([
@@ -79,6 +82,9 @@ func choice_pressed(choice):
 	# AISHA MISSION
 	# -----------------------
 	elif current_mission == "aisha":
+
+		var choices = {0: lock_button.text, 1: screen_button.text, 2: leave_button.text, 3: browse_button.text}
+		MissionManager.record_choice("Aisha Mission", "What should we do about the USB?", choices[choice])
 
 		match choice:
 

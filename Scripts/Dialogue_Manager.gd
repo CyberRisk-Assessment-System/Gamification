@@ -76,6 +76,7 @@ func _input(event):
 	and dialogue_lines[0] == "Lee: Thank you!":
 
 		MissionManager.mission1_completed = true
+		MissionManager.check_all_missions_complete()
 
 		var lee_area = get_tree().current_scene.get_node("Lee/Area3D")
 		lee_area.monitoring = false
@@ -94,4 +95,5 @@ func _input(event):
 	and dialogue_lines[0].begins_with("Aisha:"):
 
 		# Mission 2 can be marked complete here later.
+		MissionManager.check_all_missions_complete()
 		pass
